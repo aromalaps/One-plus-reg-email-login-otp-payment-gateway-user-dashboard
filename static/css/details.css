@@ -1,0 +1,70 @@
+body {
+    overflow-x: hidden;
+}
+
+.image,
+.cart_col2 {
+
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+
+}
+
+.image {
+    width: 100vw !important;
+    height: 83vh !important;
+
+}
+
+
+.cart_col2 {
+    background-color: aquamarine;
+    height: 50vh;
+
+
+}
+
+
+.cart_col1 {
+    height: 100% !important;
+    width: 50vw !important;
+
+}
+
+
+
+/* addto cart */
+.btn_addtocart {
+
+    background: black !important;
+    width: 280px;
+    height: 48px;
+    padding-top: 12px !important;
+    font-size: 1rem !important;
+}
+
+
+
+/* buy now */
+.btn_buynow {
+
+    background: rgb(255, 0, 0) !important;
+    width: 280px;
+    height: 48px;
+    padding-top: 12px !important;
+    font-size: 1rem !important;
+}
+
+.phone_name {
+    font-size: 2.8rem;
+
+}
+
+.card-text_PRICE {
+    font-size: 1.5rem;
+}
+
+.card-text {
+    font-size: 1.09rem;
+}

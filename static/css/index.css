@@ -1,0 +1,379 @@
+body {
+    overflow-x: hidden;
+
+}
+
+/* navbar */
+.navbar_height {
+    height: 43px;
+    font-size: 14px;
+}
+
+/* First frond end banner image */
+.banner1 {
+    position: relative;
+
+    width: 100vw;
+    height: 66vh !important;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    animation: slideBackground 1s linear forwards;
+    /* Adjust duration as needed */
+}
+
+@keyframes slideBackground {
+    100% {
+        background-position: 60%;
+        /* Start at the left */
+    }
+
+    0% {
+        background-position: 100%;
+        /* Transition to the right */
+    }
+}
+
+.banner-1_text {
+    position: absolute;
+    top: 10%;
+    left: 2.4%;
+    color: rgba(0, 0, 0, .9);
+    font-size: 15px;
+
+}
+
+.banner-1_text2 {
+    position: absolute;
+    top: 13.5%;
+    left: 2.4%;
+    font-size: 36px;
+    font-weight: 400;
+
+}
+
+.banner-1_text3 {
+    position: absolute;
+    top: 60%;
+    left: 2.8%;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+
+
+.banner1_button {
+    position: absolute;
+    top: 85%;
+    left: 2.8%;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    background-color: rgb(34, 33, 33) !important;
+    color: rgb(255, 255, 255) !important;
+    border-radius: 2px !important;
+    z-index: 65;
+}
+
+.banner1_learnmore {
+    position: absolute;
+    z-index: 0;
+    top: 87%;
+    left: 17%;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECOND frond end banner image */
+
+.banner2 {
+    position: relative;
+
+    width: 100vw;
+    height: 66vh !important;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    animation: slide 1s linear forwards;
+    /* Adjust duration as needed */
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0;
+        /* Start at the left */
+    }
+
+    100% {
+        background-position: 60%;
+        /* Transition to the middle */
+    }
+}
+
+
+.banner-2_text {
+    position: absolute;
+    top: 9%;
+    left: 2.4%;
+    color: rgba(0, 0, 0, .9);
+    font-size: 16px;
+
+}
+
+.banner-2_text2 {
+    position: absolute;
+    top: 12%;
+    left: 2.4%;
+    font-size: 36px;
+    font-weight: 400;
+
+}
+
+.banner-2_text3 {
+    position: absolute;
+    top: 60%;
+    left: 2.8%;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+
+
+.banner2_button {
+    position: absolute;
+    top: 85%;
+    left: 2.8%;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    background-color: black !important;
+    color: white !important;
+    border-radius: 2px !important;
+}
+
+.banner2_learnmore {
+    position: absolute;
+    top: 87%;
+    left: 15%;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+
+
+
+/* THIRD frond end banner image */
+.banner3 {
+    position: relative;
+    background-image: url("../home_images/eular-in-pc-img_3.jpg");
+    width: 100vw;
+    height: 66vh !important;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    animation: slideBackground .5s linear forwards;
+    /* Adjust duration as needed */
+}
+
+@keyframes slideBackground {
+    100% {
+        background-position: 60%;
+        /* Start at the left */
+    }
+
+    0% {
+        background-position: 100%;
+        /* Transition to the right */
+    }
+}
+
+.banner-3_text {
+    position: absolute;
+    top: 9%;
+    left: 2.4%;
+    color: rgba(0, 0, 0, .9);
+    font-size: 16px;
+
+}
+
+.banner-3_text2 {
+    position: absolute;
+    top: 12%;
+    left: 2.4%;
+    font-size: 36px;
+    font-weight: 400;
+
+}
+
+.banner-3_text3 {
+    position: absolute;
+    top: 65%;
+    left: 2.8%;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+
+.banner3_button {
+    position: absolute;
+    top: 85%;
+    left: 2.8%;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    color: white !important;
+    border-radius: 2px !important;
+}
+
+.banner3_learnmore {
+    position: absolute;
+    top: 87%;
+    left: 15%;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+
+
+/* FOUR frond end banner image */
+.banner4 {
+    position: relative;
+    background-image: url("../home_images/new-nord_img_4.jpg");
+    width: 100vw;
+    height: 66vh !important;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    animation: slide .5s linear forwards;
+    /* Adjust duration as needed */
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0;
+        /* Start at the left */
+    }
+
+    100% {
+        background-position: 60%;
+        /* Transition to the middle */
+    }
+}
+
+.banner-4_text1 {
+    position: absolute;
+    top: 9%;
+    left: 2.4%;
+    color: rgba(0, 0, 0, .9);
+    font-size: 36px;
+    font-weight: 400;
+
+}
+
+
+.banner-4_text2 {
+    position: absolute;
+    top: 78%;
+    left: 3.2%;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+
+
+.banner4_button {
+    position: absolute;
+    top: 85%;
+    left: 2.8%;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    background-color: black !important;
+    color: white !important;
+    border-radius: 2px !important;
+
+}
+
+.banner4_learnmore {
+    position: absolute;
+    top: 87%;
+    left: 15%;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    color: black !important;
+}
+
+/* banner 5 and 6 */
+.banner5,
+.banner6 {
+    background-size: cover !important;
+    background-position: center !important;
+
+
+}
+
+
+.banner5 {
+
+    background-image: url('../home_images/easy-upgrade-mob.jpg') !important;
+    height: 54.5vh;
+    width: 49.5vw !important;
+    margin-right: 8px;
+}
+
+.banner6 {
+    width: 49.5vw !important;
+    height: 54.5vh;
+    margin-left: 8px;
+    background-image: url('../home_images/student-mob.jpg') !important;
+}
+
+@media (width <=900px) {
+
+    .banner5,
+    .banner6 {
+        width: 100% !important;
+    }
+}
