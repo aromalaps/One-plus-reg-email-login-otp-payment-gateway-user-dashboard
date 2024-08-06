@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% load static %}
+{% load custom_filters %}
+{% block content %}
+<div class="container-fluid p-0">
+
+    <div class="row bg-light text-light">
+        {% for i in newphone %}
+        <div class="col-12 mb-2 banner1 " style="background-image: url('{{i.Banner.url}}'); "><!-- color:white;-->
+            <p class="banner-1_text text-light">{{i.desc}}<br></p>
+            <p class=" banner-1_text2">{{i.name}}</p>
+            <p class="banner-1_text3">From {{i.price|add_commas}} Incl. Bank Discount <br>
+                Exchange your old device and get benefits <br> worth up to ₹1000!</p>
+            <button type="button" class="btn banner1_button px-5">Buy Now</button>
+            <a href="#" class="banner1_learnmore text-light"><u>Learn More</u></a>
+        </div>
+        <h1></h1>
+        {% endfor %}
+
+        {% comment %} <!--  Second frond end banner image  -->
+        <div class="col-12 pb-2 banner2 mb-2 text-light position-relative"
+            style="  background-image: url('../home_images/oneplus12-img-2.jpg');">
+            <p class="banner-2_text text-light fw-none">Pro Performance,Not Pro Price.<br></p>
+            <p class=" banner-2_text2"> OnePlus 12</p>
+            <p class="banner-2_text3">From ₹62,999 Incl. Bank Discount <br>
+                Exchange your old device and get benefits <br> worth up to ₹9,000!</p>
+            <button type="button" class="btn  px-5 banner2_button btn-light fw-bolder text-dark bg-light">Buy
+                Now</button>
+            <a href="#" class="banner2_learnmore"><u>Learn More</u></a>
+        </div>
+        <!--  Third frond end banner image  -->
+        <div class="col-12 pb-2 banner3 mb-2 text-light ">
+            <p class="banner-3_text text-light">Harmony Unfiltered<br></p>
+            <p class=" banner-3_text2"> OnePlus Buds 3 </p>
+            <p class="banner-3_text3">At ₹4,499 Incl. Bank Discount <br>
+                Get upto additional ₹800 off for Linked<br>Device members.</p>
+            <button type="button" class="btn banner3_button px-5 btn-light text-dark bg-light ">Buy
+                Now</button>
+            <a href="#" class="banner3_learnmore"><u>Learn More</u></a>
+        </div>
+        <!--  Four frond end banner image  -->
+        <div class="col-12 pb-2  banner4 mb-0 ">
+            <p class=" banner-4_text1"> OnePlus Nord CE3<br>Lite5G</p>
+            <p class="banner-4_text2">From ₹17,999</p>
+            <button type="button" class="btn  banner4_button px-5 btn-light  ">Buy
+                Now</button>
+            <a href="#" class="banner4_learnmore"><u>Learn More</u></a>
+        </div> {% endcomment %}
+        <!-- five img*2 -->
+        <div class="col-12 col-md-6  bg-secondary banner5 mt-4">
+
+        </div>
+        <div class="col-12  col-lg-6 banner6 bg-danger mt-4">
+
+        </div>
+    </div>
+
+</div>
+{% include './nav_footer/footer.html' %}
+{% endblock %}

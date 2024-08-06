@@ -1,0 +1,16 @@
+{% extends "Userdashboard.html" %}
+{% load static %}
+{% block content %}
+{% for details in detail %}
+as
+<tr>
+    <td>{{ details.phone }}</td><br>
+    <td>{{ details.address }}</td><br>
+    <td>{{ details.pincode }}</td><br>
+    <td>{{ details.land_mark }}</td><br>
+    <td>{{ details.city }}</td><br>
+    <td>{{ details.state }}</td><br>
+</tr>
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends "Userdashboard.html" %}
+{% load static %}
+{% block content %}
+{% load custom_filters %}
+
+
+<div class="main pt-4 cart_cart mx-2 mx-md-4 ">
+    <div class="container-fluid cart_page">
+        <div class="row cart_row ">
+            <div class="col-12  m-0 w-100 p-0 pe-1 cart_col1 ">
+                <div class="row rowax  bg-light mb-1 p-3  me-0 me-md-1">
+                    <div class="col-10 pt-2 fs-5">From Saved Addresses</div>
+                    <a href="{% url "Cart:clearall" %}" type="button" class="btn rounded-0 col cart_clear ms-1 fw-bolder">CLEAR
+                        CART</a>
+                </div>
+
+            </div>
+            {% comment %} cart product start here {% endcomment %}
+            {% for i in cart %}
+            <div class="row rowbx bg-light pb-2 mb-1 me-0 me-md-1">
+
+                <div class="col-1">
+                    <img class="img_back py-2 mt-1" src="{{i.product.image.url}}" height="180px"
+                        alt="no img">
+                </div>
+                <div class="col-12 col-lg-4 detail_cart_p ms-lg-5  mt-lg-3  ps-lg-5 pt-3">
+                    <p class="fw-bold">{{i.product.name}}</p>
+                    <p class="fw-normal">Brand : Oneplus</p>
+                    <p class="fw-normal">{{i.product.detail}}</p>
+                    
+                    <span >Total Amount :<span class="fw-bold"> ₹ {{i.total|add_commas }}</span></span>
+
+                </div>
+                <div class="col-5 rowbaa d-flex justify-content-center align-items-center">
+                    <div class="row">
+                        <a href="{% url 'Cart:quantityremove' i.product.id %}" type="button"
+                            class="col-2 btn text-dark fw-bold btn-circle btn-outline-secondary me-2 btn-md ">-</a>
+                        <input class="col-2 quantity text-center mt-1 " disabled value="{{i.quantity}}" max="8" name="" id="">
+                        <a href="{% url 'Cart:addcart' i.product.id %}" type="button"
+                            class="col-2 btn text-dark fw-bold btn-circle btn-outline-secondary  btn-md ms-3">+</a>
+
+
+                    </div>
+                </div>
+                <a href="{% url 'Cart:removeX' i.product.id %}"  type="button"
+                    class="col-12 rounded-circle text-decoration-none   removeX col-sm-1 ms-1 mt-auto mb-auto fs-4  d-flex justify-content-center align-items-center text-danger  rounded-0">X</a>
+            </div>
+            {% comment %} cart product end here  {% endcomment %}
+            {% endfor %}
+        </div>
+
+
+
+        <div class="container-fluid pt-5 mt-5">
+                <div class="row rowex bg-light mb-1 p-2  d-flex justify-content-end fixed-bottom z-index-3" style="
+                margin-left: 225px;">
+                <div class="col-3 fs-4 d-flex justify-content-center align-items-center">Grand Total:₹ {{grand_total|add_commas}}
+                </div>
+                <a href="{% url 'Cart:checkout' %}" type="button" class="col-4 btn rounded-0 checkout ms-1 me-5 p-4 fw-bolder mt-md-0 mt-2">CHECK
+                    OUT</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

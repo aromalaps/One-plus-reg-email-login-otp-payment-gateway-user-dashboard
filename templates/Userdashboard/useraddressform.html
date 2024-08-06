@@ -1,0 +1,44 @@
+{% extends "Userdashboard.html" %}
+{% load static %}
+{% block content %}
+<div class="container mt-5">
+
+    <h2>User Details Form</h2>
+    <form method="POST" action="{% url 'User:useradderess' profile.id %}" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="phone">USER id</label>
+            <input type="number" class="form-control" name="user" value="{{user.id}}" placeholder="user" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" class="form-control" id="phone" name="phone" placeholder="Enter phone number" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" name="address" placeholder="Enter address" required>
+        </div>
+        <div class="form-group">
+            <label for="pincode">Pincode</label>
+            <input type="text" class="form-control" id="pincode" name="pincode" placeholder="Enter pincode" required>
+        </div>
+        <div class="form-group">
+            <label for="landmark">Landmark</label>
+            <input type="text" class="form-control" id="landmark" name="landmark" placeholder="Enter landmark">
+        </div>
+        <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" class="form-control" id="city" name="city" placeholder="Enter city" required>
+        </div>
+        <div class="form-group">
+            <label for="state">State</label>
+            <input type="text" class="form-control" id="state" name="state" placeholder="Enter state" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+
+
+
+{% endblock %}
